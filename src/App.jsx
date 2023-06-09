@@ -11,11 +11,11 @@ function App() {
   
   return (
     <Routes>
-      {token && <Route path="https://todo-app-v2-server.onrender.com/todos" exact element={<Main/>}/>};
+      {token && <Route path="/todos" exact element={<Main/>}/>};
 
-      {token===null && <Route path="https://todo-app-v2-server.onrender.com/todos" exact element={<Navigate to="https://todo-app-v2-server.onrender.com/" />} />};
+      {token===null && <Route path="/todos" exact element={<Navigate to="/" />} />};
       
-      <Route path="https://todo-app-v2-server.onrender.com/" exact element={
+      <Route path="/" exact element={
           <div className="login-wrapper" style={{
           display:"flex",
           flexDirection:"row", 
