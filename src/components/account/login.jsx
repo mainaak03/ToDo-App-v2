@@ -72,7 +72,7 @@ const Login=() => {
             setErr("");
             
             setTimeout(() => {
-                window.location="https://todo-app-v2-server.onrender.com/todos";
+                window.location="/todos";
             }, 1000);
         }
         catch (error) {
