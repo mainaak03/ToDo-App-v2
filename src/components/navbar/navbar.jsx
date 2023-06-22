@@ -1,11 +1,13 @@
 import { AppBar, Typography, Box, Button } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { useNavigate } from "react-router-dom";
 
 const Navbar=() => {
+    const navigate=useNavigate();
 
     const handleLogout=() => {
         localStorage.clear();
-        window.location="/";
+        navigate("/landing");
     };
 
     return (
