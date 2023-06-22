@@ -3,12 +3,15 @@ import {Route, Routes, Navigate} from "react-router-dom";
 import Login from "./components/account/login"
 import Main from "./components/main/main";
 import LoginLogo from "./components/loginLogo/loginLogo";
-// import "./assets/";
 
 function App() {
   
   const token=localStorage.getItem("token");
   
+  window.addEventListener("popstate",(e) => {
+    if (token===null) window.history.go(1);
+  });
+
   return (
     <Routes>
       {token && <Route path="/todos" exact element={<Main/>}/>};
