@@ -5,7 +5,7 @@ const Navbar=() => {
 
     const handleLogout=() => {
         localStorage.clear();
-        window.location="https://todo-app-v2-server.onrender.com/";
+        window.location="/";
     };
 
     return (
