@@ -89,7 +89,7 @@ const AddTodo=({showState, getTodos, setTodosHelper}) => {
 
             {err && <Typography  sx={{fontFamily:"Raleway", fontSize:"0.8rem", color:"red", fontWeight:"500"}}>{err}</Typography>}
             
-            <Button variant="outlined" onClick={handleAdd} sx={{borderRadius:"3px", width:"40%", height:"40px", margin:"15px", fontFamily:"Raleway", fontWeight:"600", fontSize:"1.2rem"}}>add!</Button>
+            <Button variant="outlined" onClick={handleAdd} sx={{borderRadius:"3px", width:"40%", height:"40px", margin:"15px", fontFamily:"Raleway", fontWeight:"600", fontSize:"1.2rem", backgroundColor:"#5620d5", color:"white"}}>add!</Button>
         </Box>
     )
 };

@@ -32,13 +32,6 @@ const EditTodo=({showState, getTodos, setTodosHelper}) => {
                 description: description
             });
 
-            // console.log({
-            //     msg: "edit request",
-            //     id: localStorage.getItem("curId"),
-            //     title: title,
-            //     description: description
-            // });
-
             setErr("");
             setDescription("");
             setTitle("");
@@ -99,7 +92,7 @@ const EditTodo=({showState, getTodos, setTodosHelper}) => {
 
             {err && <Typography  sx={{fontFamily:"Raleway", fontSize:"0.8rem", color:"red", fontWeight:"500"}}>{err}</Typography>}
             
-            <Button variant="outlined" onClick={handleEdit} sx={{borderRadius:"3px", width:"40%", height:"40px", margin:"15px", fontFamily:"Raleway", fontWeight:"600", fontSize:"1.2rem"}}>Make changes!</Button>
+            <Button variant="outlined" onClick={handleEdit} sx={{borderRadius:"3px", width:"40%", height:"40px", margin:"15px", fontFamily:"Raleway", fontWeight:"600", fontSize:"1.2rem", backgroundColor:"#5620d5", color:"white"}}>Make changes!</Button>
         </Box>
     )
 };
